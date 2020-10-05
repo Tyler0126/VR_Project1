@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <title>Project 1 Tyler McQuagge</title>    
+  </head>
+  
+  <body>
+  <a-scene>
+      <a-assets>
+        <img id="ceiling" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/wooden_ceiling.jpg">
+        <img id="floor" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/wood_floor.jpg">
+        <img id="wall" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/wall_paper.jpg">
+        <img id="tv_screen" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/news_covid.jpg">
+        <img id="tv_stand_wood" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/tv_stand_wood.jpg">
+        <img id="poster1" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(81).png">
+        <img id="poster2" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(83).png">
+        <img id="poster3" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(85).png">
+        <img id="poster4" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(89).png">
+        <img id="poster5" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(93).png">
+        <img id="poster6" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(95).png">
+        <img id="poster7" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(99).png">
+        <img id="poster8" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(101).png">
+        <img id="poster9" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(114).png">
+        <img id="poster10" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(133).png">
+        <img id="blue_fabric" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/blue_fabric.jpg">
+        <img id="laptop_keyboard" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/X7f7mBW.jpg">
+        <img id="black_steel" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/stainless_steel.jpg">
+        <img id="laptop_screen" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(134).png">
+        <img id="tv_screen2" src="https://raw.githubusercontent.com/Tyler0126/Project1/master/images/Screenshot%20(135).png">
+        <a-asset-item
+        id="Xbox"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/Xbox_One_Model/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="Xbox_Controller"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/Xbox_Controller/Xbox%20Controller.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="Couch"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/blue_couch/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="R2D2"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/rd2d_model/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="snowglobe"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/snowglobe_model/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="fishtank"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/fishtank_model/model.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="dog"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/3d_dog/Mesh_Beagle.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="clock"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/clock_model/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="newton_balls"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/newton_balls/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="basketball"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/basketball/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="globe"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/globe_model/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="books"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/books/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="mask"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/mask_model/scene.gltf"
+      ></a-asset-item>
+        <a-asset-item
+        id="sanitizer"
+        src="https://raw.githubusercontent.com/Tyler0126/3D_Models/master/sanitizer_model/scene.gltf"
+      ></a-asset-item>
+      </a-assets>
+    
+      <a-entity position="0.171 0 -3.516">
+        <a-camera>
+          <a-cursor color="red" position="0 0 -1"></a-cursor>
+        </a-camera>
+      </a-entity>
+    
+      <a-sky color="#87CEFF"></a-sky>
+      <a-plane rotation="-90 0 0" width="30" height="30"></a-plane>
+    <!-- House structure -->
+      <a-box src="#wall" position="-4.288 1.512 -5.894" rotation="0 0 0" scale="0.25 6.04 9.49"></a-box>
+      <a-box src="#wall" position="6.281 1.512 -6.001" rotation="0 0 0" scale="0.25 6.04 9.71"></a-box>
+      <a-box src="#wall" position="0.955 1.512 -10.705" rotation="0 0 0" scale="10.74 6.04 0.25"></a-box>
+      <a-box src="#ceiling" position="0.915 4.388 -5.878" rotation="0 0 0" scale="10.5 0.25 9.45"></a-box>
+      <a-box src="#wall" position="0.955 1.512 -1.209" rotation="0 0 0" scale="10.74 6.04 0.25"></a-box>
+      <a-plane src="#floor" position="1.005 0.005 -6.014" rotation="-90 0 0" scale="10.570 9.81 1.93"></a-plane>
+    
+    <!-- TV -->
+    <a-box color="black" position="-0.554 2.003 -10.565" scale="0.12 1.52 0.05"></a-box>
+    <a-box color="black" position="2.746 2.003 -10.565" scale="0.12 1.52 0.05"></a-box>
+    <a-box color="black" position="1.098 2.724 -10.565" scale="3.42 0.12 0.05"></a-box>
+    <a-box color="black" position="1.098 1.304 -10.565" scale="3.42 0.12 0.05"></a-box>
+    <a-box id="screen" src="#tv_screen" position="1.098 2.011 -10.546" scale="3.29 1.43 0.001"></a-box>
+    <a-box id="screen2" src="#tv_screen2" position="1.098 2.011 -10.575" scale="3.29 1.43 0.001"></a-box>
+    
+    <!-- Stand under TV -->
+    <a-box src="#tv_stand_wood" position="-0.725 0.446 -10.315" scale="0.11 1 0.97"></a-box>
+    <a-box src="#tv_stand_wood" position="2.939 0.446 -10.315" scale="0.11 1 0.97"></a-box>
+    <a-box src="#tv_stand_wood" position="1.117 0.891 -10.315" scale="3.63 0.11 0.97"></a-box>
+    <a-box src="#tv_stand_wood" position="1.117 0.27 -10.315" scale="3.63 0.11 0.97"></a-box>
+    
+    <!-- Xbox Model -->    
+    <a-gltf-model position="0.539 0.726 -6.642" scale="0.002 0.002 0.002" rotation="-70 0 20" src="#Xbox_Controller"></a-gltf-model>
+    <a-gltf-model position="1.132 0.311 -10.194" scale="0.04 0.04 0.04" src="#Xbox"></a-gltf-model>
+    
+    <!-- Couch Model -->
+    <a-gltf-model position="0.188 0.027 -5.309" scale="0.01 0.01 0.01" rotation="0 180 0" src="#Couch"></a-gltf-model>
+    
+    <!-- R2D2 Model -->
+    <a-text position="-2.675 2.25 -8.935" color="black" align="center" rotation="0 0 0" value="Click Me!"></a-text>
+    <a-gltf-model position="-2.675 0.434 -8.935" scale="0.05 0.05 0.05" rotation="0 180 0" src="#R2D2" class="intersectable"
+      event-set__position="_event: click;
+                           animation.property: position;
+                           animation.to: -2.675 0.434 -2.550;
+                           animation.dur: 4000">
+      <!--<a-animation attribute="position" from="-2.675 0.434 -8.935" to= "-2.675 0.434 -2.550" dur="3000"></a-animation>-->
+    </a-gltf-model>
+    
+    <!-- Snowglobe model -->
+    <a-gltf-model position="5.705 1.733 -9.346" scale="0.02 0.02 0.02" rotation="0 90 0" src="#snowglobe"></a-gltf-model>
+    
+    <!-- Fish Tank Model -->
+    <a-gltf-model position="5.927 0.359 -8.809" scale="1 1 1" rotation="0 90 0" src="#fishtank"></a-gltf-model> 
+    
+    <!-- Dog model -->
+    <a-text position="5.249 2.25 -3.216" color="black" align="center" rotation="0 270 0" value="Click the dog for sound!"></a-text>
+    <a-gltf-model position="5.249 0.413 -3.216" scale="0.01 0.01 0.01" rotation="0 270 0" src="#dog" sound="src: https://cdn.glitch.com/da32c56d-c975-4fff-97eb-376ff747d7f4%2FSingle-yard-dog-woof.mp3?v=1601860003095;
+                                                                                                            on: click"></a-gltf-model> 
+    
+    <!-- Clock model -->
+    <a-gltf-model position="5.386 2.72 -9.23`" scale="0.15 0.15 0.15" rotation="0 180 0" src="#clock"></a-gltf-model>
+    
+    <!-- Newton Balls Model -->
+    <a-gltf-model position="5.388 2.616 -8.234" scale="0.002 0.002 0.002" rotation="0 180 0" src="#newton_balls"></a-gltf-model>
+    
+    <!-- Basketball Model -->
+    <a-gltf-model position="5.409 2.528 -7.413" scale="0.075 0.075 0.075" rotation="0 90 0" src="#basketball"></a-gltf-model>
+    
+    <!-- globe model -->
+    <a-gltf-model position="5.461 0.906 -9.254" scale="0.016 0.016 0.016" rotation="0 90 0" src="#globe"></a-gltf-model>
+    
+    <!-- books model -->
+    <a-gltf-model position="12.725 -3.341 -5.61" scale="0.6 0.6 0.6" rotation="0 180 0" src="#books"></a-gltf-model>
+
+    <!-- Mask model -->
+    <a-gltf-model id="mask_model" position="-0.518 0.365 -10.475" scale="0.15 0.15 0.15" rotation="0 0 0" src="#mask" visible></a-gltf-model>
+    
+    <!-- Sanitizer model -->
+    <a-gltf-model id="hand_sanitizer" position="5.55 1.152 -4.127" scale="0.025 0.025 0.025" rotation="0 270 0" src="#sanitizer"></a-gltf-model>
+
+    <!--Covid mode switches -->
+    <a-text position="0.14 2.25 -4.401" color="black" align="center" value="Click the red button to turn off Covid mode and the green button to turn it back on!"></a-text>
+    <a-entity id="button_stand" scale="0.59 1 0.31" rotation="0 0 0" position="0.14 0.631 -4.401" geometry="primitive: box" material="color: #737373"></a-entity>
+    <a-entity id="off_switch" scale="0.09 0.12 0.1" rotation="0 0 0" position="0.25 1.136 -4.358" geometry="primitive: box" material="color: red"
+              event-set__1="_event: click;
+                            _target: #mask_model;
+                            visible: false"
+              event-set__2="_event: click;
+                            _target: #hand_sanitizer;
+                            visible: false"
+              event-set__3="_event: click;
+                            _target: #screen;
+                            visible: false"
+              event-set__4="_event: click;
+                            _target: #p1;
+                            visible: false"
+              event-set__5="_event: click;
+                            _target: #p2;
+                            visible: false"
+              event-set__6="_event: click;
+                            _target: #p3;
+                            visible: false"
+              event-set__7="_event: click;
+                            _target: #p4;
+                            visible: false"
+              event-set__8="_event: click;
+                            _target: #p5;
+                            visible: false"
+              event-set__9="_event: click;
+                            _target: #p6;
+                            visible: false"
+              event-set__10="_event: click;
+                            _target: #p7;
+                            visible: false"
+              event-set__11="_event: click;
+                            _target: #p8;
+                            visible: false"
+              event-set__12="_event: click;
+                            _target: #p9;
+                            visible: false"
+              event-set__13="_event: click;
+                            _target: #p10;
+                            visible: false"></a-entity>
+    <a-entity id="on_switch" scale="0.09 0.12 0.1" rotation="0 0 0" position="0.038 1.136 -4.358" geometry="primitive: box" material="color: green"
+              event-set__1="_event: click;
+                            _target: #mask_model;
+                            visible: true"
+              event-set__2="_event: click;
+                            _target: #hand_sanitizer;
+                            visible: true"
+              event-set__3="_event: click;
+                            _target: #screen;
+                            visible: true"
+              event-set__4="_event: click;
+                            _target: #p1;
+                            visible: true"
+              event-set__5="_event: click;
+                            _target: #p2;
+                            visible: true"
+              event-set__6="_event: click;
+                            _target: #p3;
+                            visible: true"
+              event-set__7="_event: click;
+                            _target: #p4;
+                            visible: true"
+              event-set__8="_event: click;
+                            _target: #p5;
+                            visible: true"
+              event-set__9="_event: click;
+                            _target: #p6;
+                            visible: true"
+              event-set__10="_event: click;
+                            _target: #p7;
+                            visible: true"
+              event-set__11="_event: click;
+                            _target: #p8;
+                            visible: true"
+              event-set__12="_event: click;
+                            _target: #p9;
+                            visible: true"
+              event-set__13="_event: click;
+                            _target: #p10;
+                            visible: true"></a-entity>
+
+    
+    <!-- Coffee Table -->
+    <a-box src="#tv_stand_wood" position="0.14 0.631 -7.102" scale="2.38 -0.09 1.48"></a-box>
+    <a-box src="#tv_stand_wood" position="-0.986 0.318 -7.741" scale="-0.1 0.59 0.19"></a-box>
+    <a-box src="#tv_stand_wood" position="-0.986 0.318 -6.467" scale="-0.1 0.59 0.19"></a-box>
+    <a-box src="#tv_stand_wood" position="1.263 0.318 -6.467" scale="-0.1 0.59 0.19"></a-box>
+    <a-box src="#tv_stand_wood" position="1.263 0.318 -7.714" scale="-0.1 0.59 0.19"></a-box>
+
+    <!-- Shelf -->
+    <a-box src="#tv_stand_wood" position="5.707 1.604 -10.029" scale="0.97 3.38 0.11"></a-box>
+    <a-box src="#tv_stand_wood" position="5.707 1.604 -6.75" scale="0.97 3.38 0.11"></a-box>
+    <a-box src="#tv_stand_wood" position="5.707 3.239 -8.416" scale="0.97 0.11 3.28"></a-box>
+    <a-box src="#tv_stand_wood" position="5.707 2.487 -8.416" scale="0.97 0.11 3.28"></a-box>
+    <a-box src="#tv_stand_wood" position="5.707 1.697 -8.416" scale="0.97 0.11 3.28"></a-box>
+    <a-box src="#tv_stand_wood" position="5.707 0.85 -8.416" scale="0.97 0.11 3.28"></a-box>
+    
+    <!-- Covid Timeline Posters -->
+    <a-box id="p1" src="#poster1" position="-4.17 2.457 -2.016" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p2" src="#poster2" position="-4.17 2.457 -3.546" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p3" src="#poster3" position="-4.17 2.457 -5.179" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p4" src="#poster4" position="-4.17 2.457 -6.761" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p5" src="#poster5" position="-4.17 2.457 -8.343" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p6" src="#poster6" position="-4.17 0.936 -2.016" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p7" src="#poster7" position="-4.17 0.936 -3.546" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p8" src="#poster8" position="-4.17 0.936 -5.179" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p9" src="#poster9" position="-4.17 0.936 -6.761" scale="0.06 1.31 1.24"></a-box>
+    <a-box id="p10" src="#poster10" position="-4.17 0.936 -8.343" scale="0.06 1.31 1.24"></a-box>
+    
+    <!-- Desk -->
+    <a-box src="#tv_stand_wood" position="5.632 1.017 -4.761" scale="1.21 -0.09 1.63"></a-box>
+    <a-box src="#tv_stand_wood" position="6.078 0.438 -5.457" scale="-0.1 1.18 0.19"></a-box>
+    <a-box src="#tv_stand_wood" position="5.1 0.438 -5.457" scale="-0.1 1.18 0.19"></a-box>
+    <a-box src="#tv_stand_wood" position="6.078 0.438 -4.07" scale="-0.1 1.18 0.19"></a-box>
+    <a-box src="#tv_stand_wood" position="5.1 0.438 -4.07" scale="-0.1 1.18 0.19"></a-box>
+    
+    <!-- Chair for Desk -->
+    <a-box src="#tv_stand_wood" position="4.685 0.247 -4.436" scale="0.05 0.6 0.06"></a-box>
+    <a-box src="#tv_stand_wood" position="4.685 0.247 -4.983" scale="0.05 0.6 0.06"></a-box>
+    <a-box src="#tv_stand_wood" position="5.153 0.247 -4.436" scale="0.05 0.6 0.06"></a-box>
+    <a-box src="#tv_stand_wood" position="5.153 0.247 -4.983" scale="0.05 0.6 0.06"></a-box>
+    <a-box src="#blue_fabric" position="4.928 0.552 -4.712" scale="0.63 0.06 0.65"></a-box>
+    <a-box src="#blue_fabric" position="4.559 0.835 -4.708" scale="0.63 0.06 0.65" rotation="0 0 -75"></a-box>
+    
+    <!-- Computer -->
+    <a-box src="#laptop_keyboard" position="5.498 1.078 -4.761" scale="0.71 -0.03 0.48" rotation="0 90 0"></a-box>
+    <a-box src="#black_steel" position="5.8 1.304 -4.42" scale="0.03 0.5 0.03" rotation="0 0 -15"></a-box>
+    <a-box src="#black_steel" position="5.8 1.304 -5.105" scale="0.03 0.5 0.03" rotation="0 0 -15"></a-box>
+    <a-box src="#black_steel" position="5.861 1.531 -4.767" scale="0.03 -0.03 0.68" rotation="0 0 -15"></a-box>
+    <a-box src="#laptop_screen" position="5.8 1.304 -4.765" scale="0.005 0.5 0.66" rotation="0 0 -15"></a-box>
+
+
+
+
+
+
+
+
+  </a-scene>
+  </body>
+</html>
